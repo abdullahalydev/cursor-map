@@ -29,7 +29,10 @@ export function PlayersCount() {
           animate={{ opacity: 100, top: 0 }}
           transition={{ duration: 0.5, ease: "backInOut" }}
         >
-          <NumberFlow value={cursors.length + 1} suffix=" Cursor" />
+          <NumberFlow
+            value={cursors.length + 1}
+            suffix={cursors.length + 1 > 1 ? " Cursors" : " Cursor"}
+          />
         </motion.div>
       )}
 
