@@ -8,7 +8,7 @@ export function SocialLinks() {
       <Link
         href="#"
         target="_blank"
-        className="bg-blue-100 pointer-fine:cursor-none rounded-full p-2 h-full flex items-center hover:bg-blue-100/60"
+        className="bg-blue-100 pointer-fine:cursor-none pointer-coarse:cursor-none rounded-full p-2 h-full flex items-center hover:bg-blue-100/60"
       >
         <Github className="text-blue-800" size={18} />
       </Link>
@@ -16,7 +16,7 @@ export function SocialLinks() {
       <a
         href="#"
         target="_blank"
-        className=" bg-blue-100 rounded-full p-2 h-full flex items-center hover:bg-blue-100/60"
+        className=" bg-blue-100 pointer-fine:cursor-none pointer-coarse:cursor-none rounded-full p-2 h-full flex items-center hover:bg-blue-100/60"
       >
         <Twitter className="text-blue-800" size={18} />
       </a>
