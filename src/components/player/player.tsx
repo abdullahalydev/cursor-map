@@ -1,6 +1,7 @@
 "use client";
 
 import { Cursor } from "../cursor";
+import { motion } from "motion/react";
 
 export type PlayerProps = {
   position: [number, number];
@@ -9,14 +10,12 @@ export type PlayerProps = {
 
 export function Player({ position, color }: PlayerProps) {
   return (
-    <div
+    <motion.div
       className="absolute z-50"
-      style={{
-        top: `${position[1]}px`,
-        left: `${position[0]}px`,
-      }}
+      animate={{ x: position[0], y: position[1] }}
+      transition={{ type: "spring" }}
     >
       <Cursor fill={`rgb(${color.join(",")})`} />
-    </div>
+    </motion.div>
   );
 }
