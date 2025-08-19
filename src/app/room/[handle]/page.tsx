@@ -9,7 +9,7 @@ export default async function Home({ params }: RoomPage) {
   const { handle } = await params;
 
   return (
-    <div className="overflow-hidden cursor-none h-screen w-screen">
+    <div className="cursor-none h-screen w-screen">
       <Room room={handle} />
 
       <SessionDetails />
