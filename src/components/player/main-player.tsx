@@ -37,6 +37,7 @@ export function MainPlayer() {
       animate={{ x: position[0], y: position[1] }}
       transition={{ type: "spring" }}
     >
+      <span className="text-xs bg-blue-200 rounded-full px-2 py-1 font-semibold text-blue-800">You</span>
       <Cursor fill={`rgb(${color.join(",")})`} />
     </motion.div>
   );
