@@ -9,8 +9,6 @@ import { motion } from "motion/react";
 export function Ping() {
   const { status, ping } = useStore();
 
-  console.log(status);
-
   return (
     <div className="w-content bg-blue-200 text-blue-800 py-3 px-7 h-14 w-28 flex items-center justify-center rounded-full">
       {(status === "IDLE" || status === "CONNECTING") && (
