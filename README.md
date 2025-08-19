@@ -91,6 +91,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Live Demo**: [cursor-map.vercel.app](https://cursor-map.vercel.app)
+**Live Demo**: [cursor-map-ivory.vercel.app](https://cursor-map-ivory.vercel.app)
 
 Made with ❤️ by [Abdullah Aly](https://github.com/abdullahalydev)
