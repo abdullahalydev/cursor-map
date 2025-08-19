@@ -135,7 +135,7 @@ export function Room({ room }: RoomProps) {
   }, []);
 
   useEffect(() => {
-    if (channelRef.current?.state == "joined") {
+    if (channelRef.current?.state === "joined") {
       channelRef.current?.track({
         id: id,
         color: color,
@@ -151,10 +151,17 @@ export function Room({ room }: RoomProps) {
           position: position,
         },
       });
-    } else {
+    }
+
+    if (
+      channelRef.current?.state !== "joining" &&
+      channelRef.current?.state !== "leaving"
+    ) {
       channelRef.current?.subscribe();
     }
   }, [id, position, color]);
+
+  useEffect(() => {}, []);
 
   return (
     <div className="absolute h-full w-full z-25 pointer-events-none">
