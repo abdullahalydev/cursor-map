@@ -10,7 +10,7 @@ export type PlayerProps = {
 export function Player({ position, color }: PlayerProps) {
   return (
     <div
-      className="relative"
+      className="absolute z-50"
       style={{
         top: `${position[1]}px`,
         left: `${position[0]}px`,

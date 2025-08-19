@@ -33,7 +33,7 @@ export function MainPlayer() {
 
   return (
     <motion.div
-      className="absolute z-0"
+      className="absolute z-50"
       animate={{ x: position[0], y: position[1] }}
       transition={{ type: "spring" }}
     >
