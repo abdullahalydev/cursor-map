@@ -1,6 +1,7 @@
 "use client";
 
 import { Ping } from "./room-ping";
+import { PlayersCount } from "./room-players-count";
 import { SocialLinks } from "./room-social-links";
 
 export function SessionDetails() {
@@ -11,6 +12,8 @@ export function SessionDetails() {
           <Ping />
 
           <SocialLinks />
+
+          <PlayersCount />
         </div>
       </div>
     </div>
